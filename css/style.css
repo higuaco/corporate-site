@@ -41,6 +41,12 @@ a:hover, .btn:hover {
   border: none;
   margin-top: 20px;
 }
+.btn-sm {
+  padding: 3px 10px;
+  font-size: 13px;
+  margin: 0;
+  background-repeat: 5px;
+}
 
 h2 {
     font-size: 50px;
@@ -82,11 +88,24 @@ margin-bottom: 80px;
 }
 .btn-submit {
   background-color: #4c586f;
+  border: 1px solid #4c586f;
   color: #fff;
 }
 .btn-gray {
   border: 1px solid #3e3e3b;
   color: #3e3e3b;
+}
+.btn-blue{
+  background-color: #4a80d6;
+  border: 1px solid #4a80d6;
+  color: #fff;
+  margin: 0;
+}
+.btn-red {
+  border: 1px solid red;
+  color: red;
+  padding: 5px 10px;
+  font-size: 15px;
 }
 /* header */
 header {
@@ -98,7 +117,7 @@ header {
 }
 
 /* スマホ用メニューを非表示 */
-.sp-menu {
+.sp-menu, .cart{
   display: none;
 }
   #logo {
@@ -267,4 +286,78 @@ footer {
       content: "\f105";
       font-size: 14px;
       color: #3e3e3b;
+  }
+/* sns */
+#sns {
+  background-color: #ebeced;
+  padding-bottom: 80px;
+}
+.sns {
+  width: 50%;
+  margin: 0 auto;
+}
+/* shop */
+.itemlist ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.itemlist ul li {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 10px 0;
+}
+
+.itemlist ul li:nth-child(3n-1) {
+  margin: 10px 5%;
+}
+
+.itemlist img {
+  width: 100%;
+}
+
+.item-form {
+  float: right;
+  margin-top: 15px;
+}
+
+.item-form input{
+  width: 20px;
+  padding: 0 5px;
+  text-align: right;
+}
+/* cart */
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.text-right {
+  text-align: right;
+}
+
+  .cart-table th,
+  .cart-table td {
+      border: 1px solid #ebeced;
+      vertical-align: middle;
+      padding: 5px 10px;
+  }
+
+  .cart-table th {
+      background-color: #4c586f;
+      color: #fff;
+  }
+
+  .cart-table button {
+      margin: 0;
+  }
+
+  .total td{
+      text-align: center;
+  }
+
+  .cart-btn {
+      text-align: center;
   }

@@ -48,7 +48,7 @@
   }
 
   /* メニューボタン */
-  .toggle {
+  .toggle, .cart {
       display: block;
       width: 35px;
       height: 30px;
@@ -60,6 +60,10 @@
 
   .toggle:hover {
       cursor: pointer;
+  }
+  .cart a {
+    font-size: 20px;
+    color: #fff;
   }
 
   .toggle span{
@@ -116,4 +120,72 @@
       font-size: 10px;
       color: #3e3e3b;
   }
+
+    /* sns */
+  .sns {
+    width: 80%;
+  }
+
+/* shop */
+
+  .itemlist ul li {
+      width: 40%;
+      margin: 10px 5%;
+  }
+
+  .item-form {
+      float: inherit;
+      text-align: right;
+  }
+
+  .item-form input {
+      margin-bottom: 5px;
+  }
+   /* cart.html */
+  .cart-table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cart-table thead {
+    display: none;
+}
+
+.cart-table th,
+.cart-table td {
+    border: none;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.cart-table td form {
+    text-align: right;
+    width: 90%;
+}
+.cart-table tbody th {
+    display: block;
+    text-align: center;
+}
+
+.cart-table tbody td::before {
+    content: attr(label);
+    float: left;
+    clear:both;
+    font-weight:bold;
+}
+
+.cart-table tr {
+    border: 1px solid #ebeced;
+}
+
+.cart-btn .btn{
+    margin-top: 20px;
+}
+
+.total td{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+}
+
 }
